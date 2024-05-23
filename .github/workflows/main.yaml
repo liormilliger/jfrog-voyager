@@ -9,4 +9,4 @@ jobs:
         uses: actions/checkout@v4
       - name: Deploy
         run: |
-          curl -L -u${{ secrets.JF_USER }}:${{ secrets.JF_ACCESS_TOKEN }} -T file.txt "${{ secrets.JF_URL }}/artifactory/liorm-generic-local/file.txt" 
+          curl -L -u${{ secrets.JF_USER }}:${{ secrets.REPO_TOKEN }} -T file.txt "${{ secrets.JF_URL }}/artifactory/liorm-generic-local/file.txt" 
